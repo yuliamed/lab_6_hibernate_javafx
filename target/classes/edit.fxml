@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditController">
+    <children>
+        <ButtonBar layoutX="373.0" layoutY="346.0" prefHeight="40.0" prefWidth="213.0">
+            <buttons>
+                <Button fx:id="cancelButton" cancelButton="true" mnemonicParsing="false" onAction="#onCancel" text="Отмена" />
+                <Button fx:id="saveButton" mnemonicParsing="false" onAction="#onSave" text="Сохранить" />
+            </buttons>
+        </ButtonBar>
+        <VBox alignment="CENTER_LEFT" layoutX="128.0" layoutY="14.0" prefHeight="322.0" prefWidth="406.0">
+            <children>
+                <Label fx:id="nameView" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="406.0" text="Редактирование">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="574.0" spacing="20.0">
+                    <children>
+                        <Label prefHeight="20.0" prefWidth="80.0" text="Name" />
+                        <TextField fx:id="nameField" prefHeight="20.0" prefWidth="200.0" />
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="574.0" spacing="20.0">
+                    <children>
+                        <Label prefHeight="20.0" prefWidth="80.0" text="Nickname" />
+                        <TextField fx:id="nicknameField" prefHeight="20.0" prefWidth="200.0" />
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="574.0" spacing="20.0">
+                    <children>
+                        <Label maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="80.0" text="Cost" />
+                        <TextField fx:id="costField" prefHeight="20.0" prefWidth="200.0" />
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="574.0" spacing="20.0">
+                    <children>
+                        <Label maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="80.0" text="Breed" />
+                        <TextField fx:id="breedField" prefHeight="20.0" prefWidth="200.0" />
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="574.0" spacing="20.0">
+                    <children>
+                        <Label maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="80.0" text="Birthday" />
+                  <DatePicker fx:id="birthdateField" prefHeight="26.0" prefWidth="202.0" />
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="574.0" spacing="20.0">
+                    <children>
+                        <Label maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="80.0" text="Color" />
+                        <TextField fx:id="colorField" prefHeight="20.0" prefWidth="200.0" />
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</Pane>
